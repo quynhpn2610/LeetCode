@@ -1,6 +1,6 @@
 package ContainsDuplicate_217;
 import java.util.*;
-public class hashMap {
+public class UsingMap {
     public boolean containsDuplicate(int[] nums){
         Map<Integer, Integer> map = new HashMap<>();
         for (int i: nums){
