@@ -69,8 +69,9 @@ class MyString implements Comparable<MyString>{
     @Override
     // Compare string freq. If same freq, compare lexicographic order.
     public int compareTo(MyString s){
+        // this before s: ascending order and vice versa
         if (Integer.compare(this.stringFreq, s.stringFreq) == 0){
-            return (stringVal.compareTo(s.stringVal));
+            return (s.stringVal.compareTo(stringVal));
         }
         return Integer.compare(this.stringFreq, s.stringFreq);
     }
