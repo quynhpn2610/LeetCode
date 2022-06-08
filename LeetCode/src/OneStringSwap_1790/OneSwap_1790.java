@@ -1,3 +1,5 @@
+package OneStringSwap_1790;
+
 import java.util.Scanner;
 import java.util.Stack;
 
