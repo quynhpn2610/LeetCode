@@ -4,6 +4,7 @@ public class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
+    int height;
 
     TreeNode(){}
     TreeNode(int val){
