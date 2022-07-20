@@ -1,4 +1,4 @@
-package Palindrome_125;
+package Palindrome;
 
 public class Recursion {
     //client

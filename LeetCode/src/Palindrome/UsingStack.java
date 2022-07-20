@@ -1,4 +1,4 @@
-package Palindrome_125;
+package Palindrome;
 
 import java.util.Stack;
 

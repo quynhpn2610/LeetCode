@@ -1,7 +1,5 @@
-package Palindrome_125;
+package Palindrome;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 public class UsingStack2 {
