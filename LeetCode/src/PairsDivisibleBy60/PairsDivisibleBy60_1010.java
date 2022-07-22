@@ -1,23 +1,30 @@
 package PairsDivisibleBy60;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class PairsDivisibleBy60_1010 {
     static int numPairsDivisibleBy60(int[] time){
-        int[] remainders = new int[60];
+        // Luu so du va so lan xuat hien
+        Map<Integer, Integer> map = new HashMap<>();
+        int n = time.length;
         int count = 0;
+        int remainder = 0;
 
-        for (int t:
-             time) {
-            if (t % 60 == 0){
-                count += remainders[0];
+        for (int i = 0; i < n; i++) {
+            remainder = time[i] % 60;
+            if (remainder == 0){
+                if (map.containsKey(0)){
+                    count += map.get(0);
+                }
             }
-            else{
-                int target = 60 - t % 60;
-                count += remainders[target];
+            else if (map.containsKey(60-remainder)){
+                count += map.get(60-remainder);
             }
-            remainders[t % 60]++;
+            map.put(remainder, map.getOrDefault(remainder, 0)+1);
         }
+
         return count;
     }
 
