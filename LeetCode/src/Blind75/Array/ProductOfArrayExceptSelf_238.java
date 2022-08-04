@@ -3,7 +3,7 @@ package Blind75.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ProductOfArrayExceptSelf {
+public class ProductOfArrayExceptSelf_238 {
     public static int[] productExceptSelf(int[] nums){
         int[] res = new int[nums.length];
         int prefix = 1;
