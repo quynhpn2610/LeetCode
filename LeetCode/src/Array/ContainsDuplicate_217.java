@@ -1,4 +1,4 @@
-package Grind75_Array;
+package Array;
 
 import java.util.HashSet;
 import java.util.Scanner;

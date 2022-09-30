@@ -1,4 +1,4 @@
-package Grind75_Stack;
+package Stack;
 
 import java.util.Stack;
 
