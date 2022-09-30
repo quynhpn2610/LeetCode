@@ -1,4 +1,4 @@
-package Blind75.Array;
+package Grind75_Array;
 
 import java.util.*;
 
