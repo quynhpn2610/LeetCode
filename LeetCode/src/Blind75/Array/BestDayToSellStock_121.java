@@ -15,7 +15,7 @@ public class BestDayToSellStock_121 {
                 maxP = Math.max(maxP, profit);
             }
             else{
-                l = r;
+                l = r; //move left one step
             }
             r++;
         }
