@@ -1,7 +1,7 @@
 package Tree;
 
-public class InvertBinaryTree {
-    public TreeNode invertTree(TreeNode root) {
+public class InvertBinaryTree_226 {
+    public TreeNode invertBinaryTree(TreeNode root){
         if (root == null) return root;
 
         TreeNode temp = new TreeNode();
@@ -9,8 +9,8 @@ public class InvertBinaryTree {
         root.left = root.right;
         root.right = temp;
 
-        invertTree(root.left);
-        invertTree(root.right);
+        invertBinaryTree(root.left);
+        invertBinaryTree(root.right);
 
         return root;
     }
